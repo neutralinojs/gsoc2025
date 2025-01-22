@@ -1,7 +1,7 @@
 # GSoC 2025 - Neutralinojs
 
 #### ⚠️ Update in progress
-This document will be finalized after the GSoC 2025 program launch.
+We are still updating the GSoC project idea list. Please check our Discord server's `#gsoc` channel for GSoC-related news.
 <br/><br/>
 
 Google Summer of Code 2025 ideas and guidelines - Neutralinojs
