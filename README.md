@@ -118,7 +118,8 @@ neu plugins --remove neutralinojs-builder
 }
 ```
 - Even though Neutralinojs provides x64 binaries officially, implement multi-architecture support.
-- Implement package targets as internal plugins (Import only required modules based on targets). Try to use modules like `targets/deb.js`, `targets/nsis.js` for dynamic loading.
+- Implement package targets as internal plugins (import only required modules based on targets). Try to use modules like `targets/deb.js`, `targets/nsis.js` for dynamic loading.
+- If the plugin codebase is minimal and lightweight, consider including it as a pre-installed plugin or integrating directly to the CLI codebase.
 
 ## Contributing
 
