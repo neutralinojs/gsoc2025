@@ -9,7 +9,7 @@ Google Summer of Code 2025 ideas and guidelines - Neutralinojs
 ## What is GSoC?
 
 GSoC (Google Summer of Code) is an international program that motivates developers to contribute to open-source projects. Google awards stipends for contributors who
-successfully complete the GSoC program. GSoc contributors typically work on open-source development tasks under the guidance of organization mentors. Read more details about GSoC from the [official website](https://summerofcode.withgoogle.com/).
+successfully complete the GSoC program. GSoC contributors typically work on open-source development tasks under the guidance of organization mentors. Read more details about GSoC from the [official website](https://summerofcode.withgoogle.com/).
 
 ## How to become a GSoC contributor?
 
@@ -53,9 +53,9 @@ your own ideas with us via [Discord](https://discord.gg/cybpp4guTJ) or email (`n
 
 Thank you for contributing to open-source 🎉
 
-### 1. Neutralinojs Builder: a CLI plugin to generate platform-specific app installers
+### 1. Neutralinojs builder: a CLI plugin to generate platform-specific app installers
 
-Neutralinojs CLI generates platform-specific binaries for Linux, macOS, and Windows with a platform-independent resource file. Right now, Neutralinojs application developers need to use various tools to generate application installers (i.e.,: AppImage, NSIS) for each operating system. However, we have no plans to add application installer generation support to the official CLI to keep the CLI implementation minimal and less platform-dependent. So, we would like to implement the platform-specific installer generator as a plugin for the official CLI within the official Neutralinojs GitHub organization.
+Neutralinojs CLI generates platform-specific binaries for Linux, macOS, and Windows with a platform-independent resource file. Neutralinojs application developers currently should use various tools to create application installers (i.e.,: AppImage, NSIS) for each operating system. However, we have no plans to add application installer generation support directly to the neu CLI codebase to keep the CLI implementation minimal and less platform-dependent. So, we would like to implement the platform-specific installer generator as a plugin for the official CLI within the official Neutralinojs GitHub organization.
 
 Skills required: Node.js, Neutralinojs, Application bundling on operating systems
 
@@ -67,7 +67,7 @@ Mentors: TBA
 
 #### Suggested technical decisions
 
-- Creating a CLI plugin for the solution.
+- Developing a CLI plugin for the solution.
 - Expose a new command to generate application packages.
 
 ```bash
@@ -119,6 +119,8 @@ neu plugins --remove neutralinojs-builder
 ```
 - Implement package targets as internal plugins (import only required modules based on targets). Try to use modules like `targets/deb.js`, `targets/nsis.js` for dynamic loading.
 - Keep the codebase minimal by following design patterns and principles that the official neu CLI project uses.
+- Use neu CLI core APIs from the plugin and avoid repetitive code between neu CLI and Neutralinojs builder projects.
+- Recommend users to install the builder plugin from the neu CLI if they need app installers
 
 ## Contributing
 
