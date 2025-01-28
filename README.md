@@ -53,9 +53,9 @@ your own ideas with us via [Discord](https://discord.gg/cybpp4guTJ) or email (`n
 
 Thank you for contributing to open-source 🎉
 
-### 1. Neutralinojs Builder: a community project to generate Neutralino app packages
+### 1. Neutralinojs Builder: a CLI plugin to generate platform-specific app installers
 
-Neutralinojs CLI generates platform-specific binaries for Linux, macOS, and Windows with a platform-independent resource file. Right now, Neutralinojs application developers need to use various tools to generate application installers (i.e.,: AppImage, NSIS) for each operating system. However, we have no plans to add application installer generation support to the official CLI to keep the CLI implementation minimal and less platform-dependent. Therefore, the Neutralinojs community has initiated a project called "Neutralinojs Builder" to generate application installers. The Neutralinojs builder project is still a POC and experimental, so the idea is to finalize the project based on the suggested technical specification finalized by the framework developers.
+Neutralinojs CLI generates platform-specific binaries for Linux, macOS, and Windows with a platform-independent resource file. Right now, Neutralinojs application developers need to use various tools to generate application installers (i.e.,: AppImage, NSIS) for each operating system. However, we have no plans to add application installer generation support to the official CLI to keep the CLI implementation minimal and less platform-dependent. So, we would like to implement the platform-specific installer generator as a plugin for the official CLI within the official Neutralinojs GitHub organization.
 
 Skills required: Node.js, Neutralinojs, Application bundling on operating systems
 
@@ -117,9 +117,8 @@ neu plugins --remove neutralinojs-builder
   }
 }
 ```
-- Even though Neutralinojs provides x64 binaries officially, implement multi-architecture support.
 - Implement package targets as internal plugins (import only required modules based on targets). Try to use modules like `targets/deb.js`, `targets/nsis.js` for dynamic loading.
-- If the plugin codebase is minimal and lightweight, consider including it as a pre-installed plugin or integrating directly to the CLI codebase.
+- Keep the codebase minimal by following design patterns and principles that the official neu CLI project uses.
 
 ## Contributing
 
