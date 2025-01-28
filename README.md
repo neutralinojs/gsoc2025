@@ -122,6 +122,33 @@ neu plugins --remove neutralinojs-builder
 - Use neu CLI core APIs from the plugin and avoid repetitive code between neu CLI and Neutralinojs builder projects.
 - Recommend users to install the builder plugin from the neu CLI if they need app installers
 
+### 2. Rendering a native loading animation before loading the app
+
+Neutralinojs renders the frontend web content of apps using platform-specific webview components without using a loading animation. The current implementation doesn't create any issues for small app frontends, but large frontends render a blank white screen at startup for a short period affecting the software quality and usability. The blank white screen appears for a considerable time in low-end devices and when developers load remote URLs. The only workaround for this issue is hiding and showing the app when it's ready, but it slows down the initial visible rendering time for users. This project idea suggests implementing a native loading animation for all supported platforms as a default feature to fix the startup white screen issue.
+
+Related issue: https://github.com/neutralinojs/neutralinojs/issues/814
+
+Skills required: C++, Neutralinojs, platform-specific GUI development frameworks (GTK, Windows API, and Cocoa)
+
+Difficulty rating: Medium
+
+Project size: ~350h
+
+Mentors: TBA
+
+#### Suggested UI/UX decisions
+
+- Use platform-specific spiller or infinite progress bar controls
+- Center the loading animation within the app window
+- Use proper background and foreground colors based on the current system theme
+- Indicate the loading state in the mouse cursor by using an appropriate built-in icon
+
+#### Suggested technical decisions
+
+- Use native, built-in GUI controls in each operating system
+- Keep the implementation only within the C++ webview library codebase fork
+  
+
 ## Contributing
 
 We really appreciate your code contributions. Please read [this contribution guide](https://neutralino.js.org/docs/contributing/framework-developer-guide#contribution-guidelines) before sending a pull request. Thank you for your contributions.
