@@ -152,7 +152,7 @@ Mentors: TBA
 - Use the following configuration block in `neutralino.config.json`:
 
 ```js
-{
+"window": {
   "startupLoader": {
     "type": "image", // none, system (default), image
     "image": "/resources/images/loader.gif"
