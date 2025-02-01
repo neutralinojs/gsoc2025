@@ -162,6 +162,32 @@ Mentors: TBA
 }
 ```
 
+### 3. Extending the existing native API with required functions 
+
+Neutralinojs offers a well-structured, cross-platform native API for app developers. The current native API expands to several namespaces and many JavaScript functions that most app developers can use for building general cross-platform apps. However, the current native API doesn't offer solutions for every specific development scenario -- app developers sometimes have to write native extensions or implement platform-specific command-line solutions as workarounds to implement several features that the framework itself can embed. For example, there are no built-in APIs to retrieve network details, handle file permissions, etc. This project idea suggests contributors to conduct a research for such missing framework features and implement them within the framework codebase.
+
+Related issues: https://github.com/neutralinojs/neutralinojs/issues/1372
+
+Skills required: C++, Neutralinojs, platform-specific native APIs (POSIX and Windows APIs)
+
+Difficulty rating: Medium
+
+Project size: ~350h
+
+Mentors: TBA
+
+#### Research ideas
+
+- Evaluate existing GitHub issues and discussions
+- Finding missing functions by comparing Neutralinojs with other frameworks and inbuilt Node.js APIs
+- Search forum threads created by mentioning missing native APIs in Neutralinojs
+- Prepare a list of functions that can be added to the framework without heavily affecting bundle size, performance, and code complexity
+
+#### Suggested technical decisions
+
+
+
+
 ## Contributing
 
 We really appreciate your code contributions. Please read [this contribution guide](https://neutralino.js.org/docs/contributing/framework-developer-guide#contribution-guidelines) before sending a pull request. Thank you for your contributions.
