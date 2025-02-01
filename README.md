@@ -162,7 +162,7 @@ Mentors: TBA
 }
 ```
 
-### 3. Extending the existing native API with required functions 
+### 3. Extending the existing native API with essential functions 
 
 Neutralinojs offers a well-structured, cross-platform native API for app developers. The current native API offers many JavaScript functions under several namespaces that most app developers can use for building general cross-platform apps. However, the current native API doesn't offer solutions for every specific development scenario -- app developers sometimes have to write native extensions or implement platform-specific command-line solutions as workarounds to implement several features that the framework itself can embed. For example, there are no built-in APIs to retrieve network details, handle file permissions, etc. This project idea suggests contributors to conduct a research for such missing framework features and implement them within the framework codebase.
 
