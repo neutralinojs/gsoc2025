@@ -204,8 +204,6 @@ Mentors: TBA
 
 #### Suggested technical decisions
 
-- Implement new function names, parameters, and return values strictly adhering to the existing native API design
-
 ## Contributing
 
 We really appreciate your code contributions. Please read [this contribution guide](https://neutralino.js.org/docs/contributing/framework-developer-guide#contribution-guidelines) before sending a pull request. Thank you for your contributions.
