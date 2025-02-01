@@ -151,7 +151,7 @@ Mentors: TBA
 - Keep the implementation only within the C++ webview library codebase fork
 - Use the following configuration block in `neutralino.config.json`:
 
-```
+```js
 {
   "startupLoader": {
     "type": "image", // none, system (default), image
