@@ -30,23 +30,23 @@ Follow these steps to get started with GSoC 2025 as a contributor:
 
 ## How to start writing a project proposal?
 
-- Make sure to follow the above initial steps and become familiar with the project.
-- Select a project idea out of the mentioned below
-- If you have an idea of your own / want to initiate one, post its summary and goals in a [new GitHub discussion thread](https://github.com/neutralinojs/gsoc2025/discussions/new?category=ideas).
-- Wait until project maintainers give feedback to the post (We can identify possible changes in the early stage).
-- Start drafting your proposal based on the Neutralinojs GSoC contributor proposal outline.
+1. Make sure to follow the above initial steps and become familiar with the project.
+2. Select a project idea out of the mentioned below
+3. If you have an idea of your own / want to initiate one, post its summary and goals in a [new GitHub discussion thread](https://github.com/neutralinojs/gsoc2025/discussions/new?category=ideas).
+4. Wait until project maintainers give feedback to the post (We can identify possible changes in the early stage).
+5. Start drafting your proposal based on the Neutralinojs GSoC contributor proposal outline.
 
 ## What is the project proposal template?
 
 Please create your GSoC proposal according to the following outline:
 
-- Contact details (Name, Country, Email, GitHub username, Discord username, and a small description about yourself)
-- Neutralinojs experience (Explain your familiarity with Neutralinojs)
-- Contributions (Add links to your pull requests, issues, and discussion threads)
-- Project description (Describe the project idea)
-- Goals (Summary of deliverables)
-- Tasks Timeline (Divide your goals into tasks and map with the GSoC timeline)
-- Future contributions (How do you plan to contribute to Neutralinojs in the future?)
+1. Contact details (Name, Country, Email, GitHub username, Discord username, and a small description about yourself)
+2. Neutralinojs experience (Explain your familiarity with Neutralinojs)4
+3. Contributions (Add links to your pull requests, issues, and discussion threads)
+4.  Project description (Describe the project idea)
+5.  Goals (Summary of deliverables)
+6.  Tasks Timeline (Divide your goals into tasks and map with the GSoC timeline)
+7.  Future contributions (How do you plan to contribute to Neutralinojs in the future?)
 
 ## GSoC 2025 project ideas
 
