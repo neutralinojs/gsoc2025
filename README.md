@@ -55,7 +55,7 @@ your own ideas with us via [Discord](https://discord.gg/cybpp4guTJ) or email (`n
 
 Thank you for contributing to open-source 🎉
 
-### 1. Neutralinojs builder: a CLI plugin to generate platform-specific app installers
+### Neutralinojs builder: a CLI plugin to generate platform-specific app installers
 
 Neutralinojs CLI generates platform-specific binaries for Linux, macOS, and Windows with a platform-independent resource file. Neutralinojs application developers currently should use various tools to create application installers (i.e.,: AppImage, NSIS) for each operating system. However, we have no plans to add application installer generation support directly to the neu CLI codebase to keep the CLI implementation minimal and less platform-dependent. So, we would like to implement the platform-specific installer generator as a plugin for the official CLI within the official Neutralinojs GitHub organization.
 
@@ -124,7 +124,7 @@ neu plugins --remove neutralinojs-builder
 - Use neu CLI core APIs from the plugin and avoid repetitive code between neu CLI and Neutralinojs builder projects.
 - Recommend users to install the builder plugin from the neu CLI if they need app installers
 
-### 2. Rendering a native loading animation before loading the app
+### Rendering a native loading animation before loading the app
 
 Neutralinojs renders the frontend web content of apps using platform-specific webview components without using a loading animation. The current implementation doesn't create any issues for small app frontends, but large frontends render a blank white screen at startup for a short period affecting the software quality and usability. The blank white screen appears for a considerable time in low-end devices and when developers load remote URLs. The only workaround for this issue is hiding and showing the app when it's ready, but it slows down the initial visible rendering time for users. This project idea suggests implementing a native loading animation for all supported platforms as a default feature to fix the startup white screen issue.
 
@@ -162,7 +162,7 @@ Mentors: TBA
 }
 ```
 
-### 3. Extending the existing native API with essential functions 
+### Extending the existing native API with essential functions 
 
 Neutralinojs offers a well-structured, cross-platform native API for app developers. The current native API offers many JavaScript functions under several namespaces that most app developers can use for building general cross-platform apps. However, the current native API doesn't offer solutions for every specific development scenario -- app developers sometimes have to write native extensions or implement platform-specific command-line solutions as workarounds to implement several features that the framework itself can embed. For example, there are no built-in APIs to retrieve network details, handle file permissions, etc. This project idea suggests contributors to conduct a research for such missing framework features and implement them within the framework codebase.
 
@@ -189,6 +189,22 @@ Mentors: TBA
 - Search for minimal, header-only libraries if the C++ standard library doesn't offer a solution
 - Implement functions in a way that eliminates security vulnerabilities
 
+### Implementing a native main menu API for window mode
+
+
+Related issue: https://github.com/neutralinojs/neutralinojs/issues/507
+
+Skills required: C++, Neutralinojs, platform-specific native APIs (POSIX and Windows APIs)
+
+Difficulty rating: Medium
+
+Project size: ~350h
+
+Mentors: TBA
+
+#### Suggested technical decisions
+
+- Implement new function names, parameters, and return values strictly adhering to the existing native API design
 
 ## Contributing
 
