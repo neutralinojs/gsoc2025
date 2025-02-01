@@ -138,16 +138,27 @@ Mentors: TBA
 
 #### Suggested UI/UX decisions
 
-- Use platform-specific spiller or infinite progress bar controls
+- Use platform-specific spinner or infinite progress bar controls
+- Allow developers use a custom GIF animation or static image
 - Center the loading animation within the app window
 - Use proper background and foreground colors based on the current system theme
 - Indicate the loading state in the mouse cursor by using an appropriate built-in icon
 
 #### Suggested technical decisions
 
-- Use native, built-in GUI controls in each operating system
+- Use native, built-in GUI controls in each operating system for the default loader
+- Let developers use a GIF from app resources and override the default loader setting
 - Keep the implementation only within the C++ webview library codebase fork
-  
+- Use the following configuration block in `neutralino.config.json`:
+
+```
+{
+  "startupLoader": {
+    "type": "image", // none, system (default), image
+    "image": "/resources/images/loader.gif"
+  }
+}
+```
 
 ## Contributing
 
