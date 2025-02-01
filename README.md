@@ -194,7 +194,7 @@ Mentors: TBA
 
 Related issue: https://github.com/neutralinojs/neutralinojs/issues/507
 
-Skills required: C++, Neutralinojs, platform-specific native APIs (POSIX and Windows APIs)
+Skills required: C++, Neutralinojs, platform-specific GUI development frameworks (GTK, Windows API, and Cocoa)
 
 Difficulty rating: Medium
 
