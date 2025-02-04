@@ -220,9 +220,9 @@ let menu = [
     id: "EDIT",
     text: "Edit",
     menuItems: [
-      {id: "CUT", text: "Cut", shortcut; "Ctrl + X" },
-      {id: "COPY", text: "Copy", shortcut; "Ctrl + C" },
-      {id: "PASTE", text: "Paste", shortcut; "Ctrl + V"}
+      {id: "CUT", text: "Cut", shortcut: "Ctrl + X" },
+      {id: "COPY", text: "Copy", shortcut: "Ctrl + C" },
+      {id: "PASTE", text: "Paste", shortcut: "Ctrl + V"}
     ]
   }
 ];
