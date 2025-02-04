@@ -1,9 +1,5 @@
 # GSoC 2025 - Neutralinojs
 
-#### ⚠️ Update in progress
-We are still updating the GSoC project idea list. Please check our Discord server's `#gsoc` channel for GSoC-related news.
-<br/><br/>
-
 Google Summer of Code 2025 ideas and guidelines - Neutralinojs
 
 ## What is GSoC?
@@ -191,6 +187,7 @@ Mentors: TBA
 
 ### Implementing a native main menu API for window mode
 
+Neutralinojs implements the `os.setTray()` function to create a native tray menu using an icon, but the framework doesn't offer a way to create a native main menu for an app. Since there is no API function to create a main menu, app developers should alternatively register JavaScript-based keystroke listeners in macOS to activate general shortcut key combinations like Command + C and use HTML/CSS-based main menu UI implementations. This project idea suggests contributors implement the cross-platform `window.setMainMenu(menu)` function to attach a main menu for the native app window.
 
 Related issue: https://github.com/neutralinojs/neutralinojs/issues/507
 
@@ -203,6 +200,45 @@ Project size: ~350h
 Mentors: TBA
 
 #### Suggested technical decisions
+
+- Implement the `window.setMainMenu(menu)` function by maintaining consistency with the `os.setTray()` function design
+- Use built-in platform-specific APIs for creating native menus on each operating system
+- Implement the new function to support only one menu level without sub-menus (we have plans to add multi-level menu support later) as follows:
+
+```js
+let menu = [
+  {
+    id: "FILE",
+    text: "File",
+    menuItems: [
+      {id: "OPEN", text: "Open", shortcut: "Ctrl + O" },
+      {text: "-"},
+      {id: "EXIT", text: "Exit"}
+    ]
+  },
+  {
+    id: "EDIT",
+    text: "Edit",
+    menuItems: [
+      {id: "CUT", text: "Cut", shortcut; "Ctrl + X" },
+      {id: "COPY", text: "Copy", shortcut; "Ctrl + C" },
+      {id: "PASTE", text: "Paste", shortcut; "Ctrl + V"}
+    ]
+  }
+];
+
+await Neutralino.os.setMainMenu(menu);
+```
+- Dispatch a new global event named `mainMenuItemClicked` similar to `trayMenuItemClicked` for binding click handlers:
+
+```js
+await Neutralino.events.on('mainMenuItemClicked', (evt) => {
+  if(evt.detail.id === "OPEN") {
+    // Implement File -> Open 
+  }
+});
+```
+- Keep the implementation within the C++ webview library fork
 
 ## Contributing
 
