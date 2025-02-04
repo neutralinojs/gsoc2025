@@ -164,7 +164,7 @@ Neutralinojs offers a well-structured, cross-platform native API for app develop
 
 Related issues: [neutralinojs/neutralinojs#issues](https://github.com/neutralinojs/neutralinojs/issues?q=is%3Aissue%20state%3Aopen%20label%3AAPI%20label%3Afeature-request)
 
-Skills required: C++, Neutralinojs, platform-specific native APIs (POSIX and Windows APIs)
+Skills required: C++, JavaScript, Neutralinojs, platform-specific native APIs (POSIX and Windows APIs)
 
 Difficulty rating: Medium
 
