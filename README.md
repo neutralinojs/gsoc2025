@@ -61,7 +61,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-Mentors: TBA
+Mentors: Shalitha Suranga, Athif Shaffy, and Sainath Rao
 
 #### Suggested technical decisions
 
@@ -132,7 +132,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-Mentors: TBA
+Mentors: Shalitha Suranga, Athif Shaffy, and Sainath Rao
 
 #### Suggested UI/UX decisions
 
@@ -170,7 +170,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-Mentors: TBA
+Mentors: Shalitha Suranga, Athif Shaffy, and Sainath Rao
 
 #### Research ideas
 
