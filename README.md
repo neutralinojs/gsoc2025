@@ -24,7 +24,9 @@ Follow these steps to get started with GSoC 2025 as a contributor:
 9. Start drafting a proposal by discussing it with mentors.
 10. Submit your proposal and achieve the planned milestones based on the GSoC program [schedule](https://summerofcode.withgoogle.com/programs/2025).
 
-## How to start writing a project proposal?
+**⚠️ Important notice:** Mastering a codebase takes time even if you are so experienced in languages and tools used within the Neutralinojs framework. Neutralinojs codebases use several unique techniques, practices, and standards to implement simple solutions for complex problems &mdash; understanding them properly takes time. So, we recommend you to get started by making small but high-quality contributions like bug fixes, code improvements, and small features first without trying to implement entire APIs or big features. Also, make sure not to implement solutions for existing GSoC ideas during the contribution period since our goal is to build well-designed solutions for them collaboratively during the actual GSoC coding period based on approved GSoC proposals.
+
+## How do you start writing a project proposal?
 
 1. Make sure to follow the above initial steps and become familiar with the project.
 2. Select a project idea out of the mentioned below
