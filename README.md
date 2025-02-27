@@ -1,3 +1,5 @@
+**⚠️ Important notice:** Our application for the GSoC 2025 program wasn't approved, so we won't be participating in GSoC 2025. We'll apply again for the next year's program. Thanks so much to everyone who contributed Neutralinojs before the GSoC program announced approved organizations.
+
 # GSoC 2025 - Neutralinojs
 
 Google Summer of Code 2025 ideas and guidelines - Neutralinojs
